@@ -1,0 +1,48 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 4</b></h1>
+        <p class="lead">A woodchuck (named Dr. Woodchuck) begins chucking wood at 10:00 AM at a rate of 4.5 logs per hour. Dr. Woodchuck has a total of 719 logs he needs to chuck. He ends the day at 6:00 PM because he promised his mate that he wouldn’t be late to their date at the opera house. <b> How many logs does he have left to chuck after he leaves work? </b></p>
+    </div><!-- /.container -->
+
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q4a">I can't do math</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q4b">I don't have a calculator</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q4c">2 logs</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q4d">683 logs</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q3">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q5">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

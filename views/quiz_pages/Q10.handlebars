@@ -1,0 +1,54 @@
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 10 (LAST ONE!)</b></h1>
+        <p class="lead"><i><b>How much wood could a woodchuck chuck if a woodchuck could chuck wood?</b></i></p>
+        <p class="lead">NOTE: CHOOSING THIS ANSWER WILL SUBMIT YOUR QUIZ. Please review or change any previous answers and think carefully before submission.</p>
+    </div><!-- /.container -->
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q10a">10 wood</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q10b">3.429 dirt</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q10c">Woodchuck</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q10d">Chunk</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q1">Return to Front</a> 
+            {{!-- <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q2">2</a> 
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q3">3</a> 
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q4">4</a> 
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q5">5</a> 
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q6">6</a> 
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q7">7</a> 
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q8">8</a>  --}}
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q9">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default">No more skipping. Sorry!</a>
+        </p>
+      </div>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

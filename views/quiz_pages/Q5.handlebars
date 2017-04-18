@@ -1,0 +1,49 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 5</b></h1>
+        <p class="lead">In the 1993 American fantasy-comedy film <i> Groundhog Day </i>, the main character Phil wakes up every morning to what song?</p>
+    </div><!-- /.container -->
+
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q5a">“Black Magic Woman”</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q5b">“I Got You Babe”</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q5c">“Tie a Yellow Ribbon”</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q5d">“Spinning Wheel”</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q4">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q6">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+  </div>
+
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

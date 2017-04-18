@@ -1,0 +1,47 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 6</b></h1>
+        <p class="lead">What is Punxsutawney Phil famous for?</p>
+    </div><!-- /.container -->
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q6a">Being a groundhog</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q6b">Winning the Nobel Peace Prize in 1998</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q6c">His Rasputin impersonation</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q6d">Inventing the DVD rewinder</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q5">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q7">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

@@ -1,0 +1,37 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/woodchuck.png">
+      </a>
+        <h1><b>How Much Wood <i>Would</i> a Woodchuck Chuck if a Woodchuck Could Chuck Wood?</b></h1>
+        <p class="lead">This quiz is composed of 10 questions. Best of luck.</p>
+    </div><!-- /.container -->
+    <a type="button" class="btn btn-lg btn-primary" href="/Q1"><span class="glyphicon glyphicon-tree-deciduous"></span> Start Quiz </a>
+    </div>
+  </div>
+
+<script src="quiz.js"></script>
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

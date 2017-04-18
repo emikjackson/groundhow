@@ -1,0 +1,48 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 3</b></h1>
+        <p class="lead">Groundhogs are also known as:</p>
+    </div><!-- /.container -->
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q3a">Bears</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q3b">Woodchucks</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q3c">Business Owners</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q3d">Dirt Enthusiasts</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q2">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q4">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+    </div>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

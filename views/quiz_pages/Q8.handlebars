@@ -1,0 +1,45 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 8</b></h1>
+        <p class="lead">True or False: groundhogs have curved spines.</p>
+    </div><!-- /.container -->
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q8a">True</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q8b">False</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q7">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q9">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

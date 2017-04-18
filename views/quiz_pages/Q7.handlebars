@@ -1,0 +1,47 @@
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 7</b></h1>
+        <p class="lead">Groundhog teeth never stop growing. How do they keep their teeth trim?</p>
+    </div><!-- /.container -->
+
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q7a">They regularly shave off the bottoms of their teeth every morning after they wake up</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q7b">They have special groundhog dentists that take care of their teeth for them during yearly checkups</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q7c">They take teeth control, which provides hormones to slow (and even stop) the growth of their teeth</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q7d">They chuck wood</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q6">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q8">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

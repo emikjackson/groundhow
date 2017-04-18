@@ -1,0 +1,47 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 2</b></h1>
+        <p class="lead">You have 4 groundhogs, and your friend Sally has 8 groundhogs. <br/> Sally decides that she has too many groundhogs, and she gifts you 2. <br/> How many groundhogs do you have?</p>
+    </div><!-- /.container -->
+      <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q2a">One too many</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q2b">0</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q2c">6</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q2d">9</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q1">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q3">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

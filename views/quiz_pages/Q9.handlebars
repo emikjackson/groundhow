@@ -1,0 +1,46 @@
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 9</b></h1>
+        <p class="lead">What do groundhogs like to eat?</p>
+    </div><!-- /.container -->
+    <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q9a">Protein bars (for the gainz)</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q9b">Grass and vegetation</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q9c">None pizza, left beef</a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q9d">Juice</a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/Q8">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q10">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

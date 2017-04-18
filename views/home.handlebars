@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body ng-app="tester" ng-controller="AppCtrl as app">
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="groundhow-logo">
+      <img src="/groundhow_logo.png">
+    </a>
+    <h1>Welcome to GroundHow</h1>
+    <p>A simple site to help you learn more about the life, times, and relevant philisophical questions of the vibrant and complex groundhog species.</p>
+    <a type="button" class="btn btn-lg btn-primary" href="/quiz"><span class="glyphicon glyphicon-tree-deciduous"></span> Take the Quiz</a>
+  </div>
+</div>
+<div class="container">
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> About the Quiz</h3>
+      <ul>
+        <li>The GroundHow quiz is currently the only way to gain official WhistlePig certification. This grants you woodchucking license for the four consecutive years upon completion in the states of MI, WA, MA, TX, and FL.</li>
+
+        <li>The quiz consists of ten questions regarding the anatomy, life, and cultural significance of the groundhog. Each question was developed through years of intensive marmot-questionnaire training.</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-apple"></span> How to Prepare</h3>
+      <ul>
+        <li>While the GroundHow quiz is rigorous, a perfect score is by no means unattainable! However, it will take hard work, and dedicated studying. Start by viewing the following sources:</li>
+        <ul>
+          <li><a href="https://academic.oup.com/beheco/article/7/3/299/179077/The-influence-of-distance-to-burrow-on-flight">Groundhog Burrowing Analysis</a></li>
+          <li><a href="http://cancerres.aacrjournals.org/content/52/15/4139.short">A Review of the Marmot Hepatitis Epidemic</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Groundhog">Wikipedia</a></li>
+        </ul>
+        <li>Read up? Great! Sadly, although reading can get you far, the only way to truly prepare is to become a groundhog yourself. Since that is <b>absurd</b>, we of course must do the next best thing. Live as a groundhog for a decent chunk of time. About 3-5 months should be sufficient.</li>
+        <ul>
+          <li> Note: to accomplish the groundhog home-stay as mentioned above, you will find camouflage to be incredibly helpful. For reference, <a href="https://aos.iacpublishinglabs.com/question/aq/1400px-788px/answer-much-wood-could-woodchuck-chuck_e32ad5cfa8ac2ce4.jpg?domain=cx.aos.ask.com">here</a> is a picture of my aunt on her semester abroad with a groundhog family in '76. You almost can't tell which one is her!</li>
+      </ul>
+      </ul> <br> <br>
+    </div>
+  </div> <!-- row -->
+</div>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="test.js"></script>
+<script src="/libs/jquery-2.1.1.min.js"></script>
+<script src="/libs/handlebars-v2.0.0.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

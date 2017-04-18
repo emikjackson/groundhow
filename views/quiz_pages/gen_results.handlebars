@@ -1,0 +1,37 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/marmot.jpg">
+      </a>
+        <h1><b>"Oh no I'm not sad... Just... Disappointed..."</b></h1>
+        <p class="lead">Well, you didn't do THE WORST. But you definitely could have done better. </p>
+    </div><!-- /.container -->
+        <a type="button" class="btn btn-lg btn-primary" href="/scoresheet"><span class="glyphicon glyphicon-th-list"></span>  See Your Score (Warning: VERY plain text) </a> <br>
+        <a type="button" class="btn btn-lg btn-primary" href="/quiz"><span class="glyphicon glyphicon-repeat"></span> Retake </a> 
+    </div>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+

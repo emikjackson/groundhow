@@ -1,0 +1,49 @@
+
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class ="quizzer text-center"> 
+    <div class="container">
+      <a href="/" class="groundhow-logo">
+        <img src="/groundhow_logo.png">
+      </a>
+        <h1><b>QUESTION 1</b></h1>
+        <p class="lead">What is the scientific name of the groundhog?</p>
+    </div>
+      <div class = "question">
+        <p class="lead"> 
+          <a type="button" class="btn btn-lg btn-primary" href="/Q1a"></span> <i>Groundhoggy mcgroundhogface</i></a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q1b"><i>Marmota monax</i></a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q1c"></span> <i>Ytu brutus</i></a>
+          <a type="button" class="btn btn-lg btn-primary" href="/Q1d"></span> <i>Hors d’œuvre</i></a>
+        </p>
+        <p align="center">
+            <a align ="left" type="button" class="btn btn-lg btn-default" href="/quiz">Back</a> 
+            <a align="right" type="button" class="btn btn-lg btn-default" href="/Q2">Skip</a>
+        </p>
+      </div>
+      <p class="lead">Current Answer: </p> <div id="render_here"> If only it rendered... </div>
+  </div>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+
+
+

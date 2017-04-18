@@ -1,0 +1,45 @@
+{
+  "name": "groundhow",
+  "version": "1.0.0",
+  "description": "My app description",
+  "scripts": {
+    "deploy": "npm test && git push heroku master",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.15.2",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.2.1",
+    "express-validator": "^2.21.0",
+    "method-override": "^2.3.5",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.4",
+    "monk": "^4.0.0",
+    "morgan": "^1.8.1",
+    "nodemailer": "^2.7.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "6.1.0"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emikjackson/groundhow.git"
+  },
+  "author": "Emi Jackson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emikjackson/groundhow/issues"
+  },
+  "homepage": "https://github.com/emikjackson/groundhow#readme"
+}
