@@ -26,12 +26,12 @@ var quizController = require('./controllers/quiz');
 require('./config/passport');
 var app = express();
 
-
+/*
 mongoose.connect('mongodb://localhost/quiz_info')
 mongoose.connection.on('error', function() {
   console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
   process.exit(1);
-});
+});*/
 
 var hbs = exphbs.create({
   defaultLayout: 'main',
