@@ -1,15 +1,15 @@
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
-var compression = require('compression');
+//var compression = require('compression');
 var methodOverride = require('method-override');
 var session = require('express-session');
-var flash = require('express-flash');
+//var flash = require('express-flash');
 var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
 var dotenv = require('dotenv');
 var exphbs = require('express-handlebars');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 var passport = require('passport');
 var cors = require('cors');
 
@@ -52,14 +52,14 @@ var hbs = exphbs.create({
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
-app.use(compression());
+//app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(expressValidator());
 app.use(methodOverride('_method'));
 //app.use(session({ secret: process.env.SESSION_SECRET, resave: true, saveUninitialized: true }));
-app.use(flash());
+//app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(function(req, res, next) {
